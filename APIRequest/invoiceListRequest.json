@@ -1,0 +1,15 @@
+{
+    "header": {
+        "ver": 1,
+        "src_sys_type": 2,
+        "src_sys_name": "IOMediaScript",
+        "archtics_version": "$ARCHTICS_VERSION"
+    },
+    "command1": {
+        "cmd": "invoice_list",
+        "ref": "456",
+        "uid": "$UID",
+        "dsn": "$DSN",
+        "acct_id": "$ACCT_ID"
+    }
+}

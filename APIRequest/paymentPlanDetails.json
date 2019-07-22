@@ -1,0 +1,14 @@
+ {
+    "header": {
+        "ver": 1,
+        "src_sys_type": 2,
+        "src_sys_name": "testing",
+        "archtics_version": "V608"
+    },
+    "command1": {
+        "cmd": "payment_plan_details",
+        "ref": "456",
+        "uid": "INET01",
+        "dsn": "genesis"
+    }
+}

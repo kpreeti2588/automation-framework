@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="classes">
+  <test name="Chrome">
+    <parameter name="browser" value="CHROME1"/>
+    <classes>
+      <class name="org.iomedia.galen.tests.ManageTicketsFunctional">
+        <methods>
+          <include name="verifyDownloadTickets"/>
+        </methods>
+      </class> <!-- org.iomedia.galen.tests.ManageTicketsFunctional -->
+      <class name="org.iomedia.galen.tests.ManageTicketsGalen">
+        <methods>
+          <include name="verifyManageTicketsPage"/>
+          <include name="verifyTicketsListingPage"/>
+          <include name="verifySendDonateTicket"/>
+          <include name="verifySellTicket"/>
+          <include name="verifyDonateTicket"/>
+        </methods>
+      </class> <!-- org.iomedia.galen.tests.ManageTicketsGalen -->
+    </classes>
+  </test> <!-- Chrome -->
+  <test name="Ios">
+    <parameter name="browser" value="IOS1"/>
+    <classes>
+      <class name="org.iomedia.galen.tests.ManageTicketsFunctional">
+        <methods>
+          <include name="verifyDownloadTickets"/>
+        </methods>
+      </class> <!-- org.iomedia.galen.tests.ManageTicketsFunctional -->
+      <class name="org.iomedia.galen.tests.ManageTicketsGalen">
+        <methods>
+          <include name="verifyManageTicketsPage"/>
+          <include name="verifyTicketsListingPage"/>
+          <include name="verifySendDonateTicket"/>
+          <include name="verifySellTicket"/>
+          <include name="verifyDonateTicket"/>
+        </methods>
+      </class> <!-- org.iomedia.galen.tests.ManageTicketsGalen -->
+    </classes>
+  </test> <!-- Ios -->
+</suite> <!-- Suite -->
+

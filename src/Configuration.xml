@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><selenium>
+	<common>
+		<calendar>AMGR_SANITY</calendar>
+		<implicitWait>36000</implicitWait>
+		<version>VER_JUNE_2017</version>	
+		<env>UNITAS</env>
+		<envFilePath>/src/Environments.xml</envFilePath>
+		<dimenFilePath>/src/Dimensions.json</dimenFilePath>
+		<cucumber.properties>/src/cucumber.properties</cucumber.properties>
+		<appCredentialsPath>/Data/Config.xml</appCredentialsPath>
+		<dataSheets>/datasheets/</dataSheets>
+		<galenConfig>.galen.config</galenConfig>
+		<specFolderPath>/specs/</specFolderPath>
+		<reportColor>#009CDE</reportColor>
+		<orgName>AMGR Testing</orgName>
+		<autoDetectAndroidDevices>false</autoDetectAndroidDevices>
+		<autoDetectIOSDevices>false</autoDetectIOSDevices>
+		<takeScreenshot>true</takeScreenshot>
+	    <emailNotification>true</emailNotification>
+   		<suiteTo>prateek.ladha@ticketmaster.com;</suiteTo>
+	    <classTo></classTo>
+	    <attachSSInEmail>false</attachSSInEmail>
+	    <zipping>false</zipping>
+		<newCommandTimeout>200000</newCommandTimeout>
+		<envCheck>true</envCheck>
+		<envCheckMethod>org.iomedia.galen.common.Utils.envcheck</envCheckMethod>
+	 	<methodHandleUnwantedPopups>org.iomedia.galen.common.Utils.handlePopups</methodHandleUnwantedPopups>
+	    <envCheckPoll>5</envCheckPoll>
+		<auto_dp>false</auto_dp>
+		<agilePackage>org.iomedia.galen.tests</agilePackage>
+		<testSet>SeleniumReport</testSet>
+		<clearX>F</clearX>
+		<mailbox>Preeti.Kumari@LYV.livenation.com</mailbox>
+		<passkey>PZuEB9yEHgRnC6zJG9KswQ8q7lm7HyX3RegkkYdloYw=</passkey>
+		<replaceCalendarFile>false</replaceCalendarFile>
+		<jenkinsIpAddress>10.191.126.11:8080</jenkinsIpAddress>
+		<noOfRetriesForSameOperation>20</noOfRetriesForSameOperation>
+		<firefox_profile_name>default</firefox_profile_name>
+		<chrome_profile_name/>
+		<profiles>default</profiles>
+		<javascript/>
+		<sauce_username>iomedia</sauce_username>
+		<sauce_accesskey>b27203b4-7132-4eca-b282-f81159feb957</sauce_accesskey>
+		<runLocally>true</runLocally>
+		<timeZone>New_York</timeZone>
+		<sauceLabsConcurrentSession>8</sauceLabsConcurrentSession>
+		<localConcurrentSession></localConcurrentSession>
+		<modifyGalenPassFailInReport>true</modifyGalenPassFailInReport>
+		<passPercentage>90</passPercentage>
+		<strUrl>https://iomtmstr021.io-virtualvenue.com/admin/</strUrl>
+		<tcJsonFolder>/Json/</tcJsonFolder>
+		<jsonConfig>/src/JSONConfiguration.xml</jsonConfig>
+		<zaleniumURI/>
+		<accountStatus>UNPAID,PLAN,PAID,PARTIALLY PAID</accountStatus>
+		<foundCredentailsForRelatedEnvsMtd>org.iomedia.galen.common.Utils.getRelatedEnv</foundCredentailsForRelatedEnvsMtd>
+		<setSeleniumUri>org.iomedia.galen.common.Utils.setSeleniumUri</setSeleniumUri>
+		<createAccount/>
+		<appCredentialsEmailAddressKey>EMAIL_ADDRESS</appCredentialsEmailAddressKey>
+		<appCredentialsPasswordKey>PASSWORD</appCredentialsPasswordKey>
+		<saveToAppCredentials>true</saveToAppCredentials>
+		<useATSGenericUrl>true</useATSGenericUrl>
+		<number_of_seats_per_block>2</number_of_seats_per_block>
+		<number_of_seats_per_block_unpaid>1</number_of_seats_per_block_unpaid>
+		<number_of_accounts/>
+		<seats.paid>2</seats.paid>
+		<seats.unpaid>3</seats.unpaid>
+		<parking.paid>0</parking.paid>
+		<parking.unpaid>0</parking.unpaid>
+		<handling.paid>0</handling.paid>
+		<handling.unpaid>0</handling.unpaid>
+		<sessions>1</sessions>
+		<deviceList>laptop,desktop,mobile</deviceList>
+		<groups/>
+		<defaultSeverity>Medium</defaultSeverity>
+		<setSession>false</setSession>
+		<payment_plan_id>3</payment_plan_id>
+		<bundling>true</bundling>
+		<attachLogFile>false</attachLogFile>
+		<sauceLabsMaxDuration>2100</sauceLabsMaxDuration>
+		<sauceLabsCommandTimeout>300</sauceLabsCommandTimeout>
+		<sauceLabsIdleTimeout>300</sauceLabsIdleTimeout>
+		<generateNewTestNgFile>false</generateNewTestNgFile>
+		<pixelMatch>80</pixelMatch>
+		<splunkUrl>https://prd-p-t9kp5vbm8ncl.cloud.splunk.com/en-GB/app/search/search?q=search%20</splunkUrl>
+		<splunkLogIntegration>false</splunkLogIntegration>
+		<videoGifIntegration>false</videoGifIntegration>
+		<consoleLogsIntegration>false</consoleLogsIntegration>
+		<generateGifOnlyOnFailure>true</generateGifOnlyOnFailure>
+<!-- 		<bundleId>com.example.apple-samplecode.UICatalog</bundleId> -->
+<!-- 		<noReset>true</noReset> -->
+<!-- 		<iosapp>UICatalog.app</iosapp> -->
+	</common>
+	<ios1>
+		<platformName>iOS</platformName>
+		<platformVersion>10.2</platformVersion>
+	    <deviceName>iPhone 7 Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+		<udid>D6E261DF-B2BE-4A67-A965-C1D26E9D862F</udid>
+	</ios1>
+	<ios2>
+		<platformName>iOS</platformName>
+		<platformVersion>9.0</platformVersion>
+	    <deviceName>iPhone 6 Plus Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+	</ios2>
+	<ios3>
+		<platformName>iOS</platformName>
+		<platformVersion>10.0</platformVersion>
+	    <deviceName>iPhone 7 Plus Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+	</ios3>
+	<ios4>
+		<platformName>iOS</platformName>
+		<platformVersion>11.0</platformVersion>
+	    <deviceName>iPhone 8 Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+	</ios4>
+	<ios5>
+		<platformName>iOS</platformName>
+		<platformVersion>9.1</platformVersion>
+	    <deviceName>iPhone 6s Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+	</ios5>
+	<ios6>
+		<platformName>iOS</platformName>
+		<platformVersion>9.1</platformVersion>
+	    <deviceName>iPhone 6s Plus Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+	</ios6>
+	<ios7>
+		<platformName>iOS</platformName>
+		<platformVersion>11.0</platformVersion>
+	    <deviceName>iPhone X Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+	</ios7>
+	<ios8>
+		<platformName>iOS</platformName>
+		<platformVersion>10.3</platformVersion>
+	    <deviceName>iPad Simulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>tablet</deviceType>
+		<ip>http://localhost:5555/wd/hub</ip>
+		<udid>2AD9C091-9A45-4CE2-9628-19EABDF57CDF</udid>
+	</ios8>
+	<android2>
+		<platformName>Android</platformName>
+		<platformVersion>6.0</platformVersion>
+	    <deviceName>Android GoogleAPI Emulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:4724/wd/hub</ip>
+	</android2>
+	<android1>
+		<platformName>Android</platformName>
+		<platformVersion>7.0</platformVersion>
+	    <deviceName>Android GoogleAPI Emulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+	    <ip>http://localhost:4723/wd/hub</ip>
+	</android1>
+	<android3>
+		<platformName>Android</platformName>
+		<platformVersion>5.1</platformVersion>
+	    <deviceName>Android GoogleAPI Emulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:4724/wd/hub</ip>
+	</android3>
+	<android4>
+		<platformName>Android</platformName>
+		<platformVersion>4.4</platformVersion>
+	    <deviceName>Android GoogleAPI Emulator</deviceName>
+	    <deviceOrientation>portrait</deviceOrientation>
+	    <deviceType>phone</deviceType>
+		<ip>http://localhost:4724/wd/hub</ip>
+	</android4>
+	<chrome1>
+		<browserVersion>62.0</browserVersion>
+		<platformName>macOS 10.12</platformName>
+<!-- 		<chromedriverversion>2.26</chromedriverversion> -->
+		<screensizepadding>0</screensizepadding>
+	</chrome1>
+	<chrome2>
+		<browserVersion>57.0</browserVersion>
+		<platformName>Windows 10</platformName>
+		<chromedriverversion>2.29</chromedriverversion>
+		<screensizepadding>0</screensizepadding>
+	</chrome2>
+	<firefox2>
+		<browserVersion>53.0</browserVersion>
+		<platformName>Windows 10</platformName>
+		<screensizepadding>0</screensizepadding>
+		<firefoxBinaryPath/>
+	</firefox2>
+	<firefox1>
+		<browserVersion>52.0</browserVersion>
+		<platformName>Windows 7</platformName>
+		<screensizepadding>0</screensizepadding>
+		<firefoxBinaryPath/>
+	</firefox1>
+	<safari1>
+		<browserVersion>11.0</browserVersion>
+		<platformName>macOS 10.13</platformName>
+	</safari1>
+	<safari2>
+		<browserVersion>9.0</browserVersion>
+		<platformName>OS X 10.11</platformName>
+	</safari2>
+	<ie1>
+		<browserVersion>11.0</browserVersion>
+		<platformName>Windows 8.1</platformName>
+	</ie1>
+	<ie2>
+		<browserVersion>14.14393</browserVersion>
+		<platformName>Windows 10</platformName>
+	</ie2>
+</selenium>

@@ -1,0 +1,62 @@
+@script my-methods.js
+@script my-rules.js
+
+@objects
+    footer  .footer
+        copyright   p
+        menu-items-*    ul li a
+        menus    ul
+@set
+    laptopMargin    ~2.5% of screen/width
+    desktopMargin   ~6% of screen/width
+    tabletMargin    ~2.6% of screen/width
+    
+= Footer =
+    @on *
+        footer:
+            height >= 50 px
+            inside screen ~0px bottom left right
+
+        footer.copyright:
+            height ~24 px
+            @on laptop, desktop, tablet
+                inside footer ${tabletMargin} left
+                centered vertically inside footer
+                #css font-size is "14px"
+                left-of footer.menu-items-1 ~37 px
+                aligned horizontally all footer.menus ~1 px
+
+            @on mobile, mini-tablet
+                centered horizontally inside footer
+                inside footer ~10px top
+                #css font-size is "10px"
+                #css text-align is "center"
+                above footer.menu-items-1 ~9 px
+                aligned vertically centered footer.menus
+
+            css font-family contains "oboto"
+            #css font-weight matches "^(normal|400)$"
+            #css font-style is "normal"
+            #css font-stretch is "normal"
+
+        global:
+            count visible footer.menu-items-* is 2
+
+        @forEach [footer.menu-items-*] as menu, next as nextMenu
+            ${menu}:
+                | left-of ${nextMenu} ~30 px
+                @on laptop, desktop, tablet
+                    height ~16 px
+                    aligned horizontally centered footer.copyright ~1 px
+                    #css font-size is "14px"
+
+                @on mobile, mini-tablet
+                    height ~11 px
+                    inside footer ~10px bottom
+                    #css font-size is "10px"
+
+                css font-family contains "oboto"
+                #css font-weight matches "^(normal|400)$"
+                #css font-style is "normal"
+                #css font-stretch is "normal"
+                aligned horizontally all ${nextMenu}

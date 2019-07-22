@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENV>
+	<GENESISPROFILER>
+    	<VER_JUNE_2017>
+	      	<CHROME1>
+		        <EMAIL_ADDRESS>IOMedia7623950d7c@mailinator.com</EMAIL_ADDRESS>
+		        <PASSWORD>123456</PASSWORD>
+		        <PLAN_EMAIL_ADDRESS>IOMedia7623950d7c@mailinator.com</PLAN_EMAIL_ADDRESS>
+		        <PLAN_PASSWORD>123456</PLAN_PASSWORD>
+		        <PAID_EMAIL_ADDRESS>IOMedia7623950d7c@mailinator.com</PAID_EMAIL_ADDRESS>
+		        <PAID_PASSWORD>123456</PAID_PASSWORD>
+		        <PARTIALLY_PAID_EMAIL_ADDRESS>IOMedia7623950d7c@mailinator.com</PARTIALLY_PAID_EMAIL_ADDRESS>
+		        <PARTIALLY_PAID_PASSWORD>123456</PARTIALLY_PAID_PASSWORD>
+		        <EXISTING_CARD_EMAIL_ADDRESS>IOMedia7623950d7c@mailinator.com</EXISTING_CARD_EMAIL_ADDRESS>
+		        <EXISTING_CARD_PASSWORD>123456</EXISTING_CARD_PASSWORD>
+		        <SWITCH_ACC_EMAIL_ADDRESS>IOMedia7623950d7c@mailinator.com</SWITCH_ACC_EMAIL_ADDRESS>
+		        <SWITCH_ACC_PASSWORD>123456</SWITCH_ACC_PASSWORD>
+		        <ASSOCIATED_ACC_EMAIL_ADDRESS>IOMedia7623950d7c@mailinator.com</ASSOCIATED_ACC_EMAIL_ADDRESS>
+		        <ASSOCIATED_ACC_PASSWORD>123456</ASSOCIATED_ACC_PASSWORD>
+	      	</CHROME1>
+	      	<COMMON>
+	      		<ats>http://10.71.124.76:5000/ats/ticketing_services.aspx</ats>
+           		<db_server>sdbc02.arc.iphx1.winsys.tmcs</db_server>
+           		<adminUserName>admin</adminUserName>
+           		<adminPassword>123456</adminPassword>
+	      	</COMMON>
+    	</VER_JUNE_2017>
+  	</GENESISPROFILER>
+</ENV>
